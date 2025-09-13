@@ -8,8 +8,8 @@ __pycache__/
 *.pyd
 
 # 虚拟环境
-venv/
-env/
+# venv/
+# env/
 
 # 其他临时文件
 *.log
