@@ -9,7 +9,7 @@ USER_DIR_PATH = (
 
 with sync_playwright() as p:
     context = p.chromium.launch_persistent_context(
-        headless=False, user_data_dir=USER_DIR_PATH, channel="chrome"
+        headless=False, user_data_dir=USER_DIR_PATH, channel="chrome"， bypass_csp=True
     )
     page = context.new_page()
     print("准备去139邮箱")
